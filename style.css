@@ -123,3 +123,30 @@ footer {
 .b:hover {
   color: var(--very-dark-cyan);
 }
+@media screen and (max-width: 922px) {
+  .section2 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .section3 {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .section1 {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  .section2 {
+    border-radius: 0;
+  }
+  .section3 {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
