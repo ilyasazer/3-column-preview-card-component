@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+body {
+  color: aliceblue;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-big-shoulders: "Big Shoulders Display", cursive;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+section {
+  display: inline-block;
+  padding: 30px;
+}
+.section1 {
+  width: 250px;
+  height: 450px;
+  background-color: var(--bright-orange);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.section2 {
+  width: 250px;
+  height: 450px;
+  background-color: var(--dark-cyan);
+}
+.section3 {
+  width: 250px;
+  height: 450px;
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1 {
+  font-family: var(--font-big-shoulders);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 39px;
+}
+p {
+  text-align: start;
+  font-family: var(--font-lexend);
+  font-weight: 400;
+  color: var(--transparent-white);
+  padding: 20px;
+  padding-top: 5px;
+  line-height: 1.5rem;
+}
+img {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.btn1 {
+  color: var(--bright-orange);
+}
+.btn2 {
+  color: var(--dark-cyan);
+}
+.btn3 {
+  color: var(--very-dark-cyan);
+}
+button {
+  border: none;
+  border: 2px solid white;
+  background-color: var(--very-light-gray);
+  padding: 15px 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: var(--font-lexend);
+  margin-top: 60px;
+  margin-left: 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  font-family: var(--font-lexend);
+}
+.a,
+.b {
+  color: var(--bright-orange);
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.a:hover,
+.b:hover {
+  color: var(--very-dark-cyan);
+}
